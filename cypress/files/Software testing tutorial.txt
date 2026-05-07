@@ -1,0 +1,67 @@
+Software Testing Tutorials – Summary of Learnings
+Date: 25 March 2026
+
+Tutorial #1 – Introduction to Software Testing
+Software testing is the process of analyzing and verifying software products to ensure that all functional and non-functional requirements are met as intended by the developers.
+
+Tutorial #2 – Manual Testing Procedures
+The manual testing process follows these key steps:
+
+1. Analyze and understand the software requirements.
+2. Plan the appropriate testing methods and approach.
+3. Create detailed test cases for each requirement.
+4. Execute the test cases and record results (Pass/Fail). In case of failure, thoroughly document the defects or bugs identified.
+5. Prepare and submit a formal test report.
+
+Tutorial #3 – Objectives of Software Testing
+
+1. To identify and prevent defects.
+2. To ensure the product meets high quality standards.
+3. To verify that the software fulfills customer requirements.
+4. To evaluate whether the software is fit for its intended use by the customer.
+
+Tutorial #4 – Principles of Software Testing
+
+1. Early Testing: Testing should begin as early as possible in the Software Development Life Cycle (SDLC) to ensure each phase produces the expected output and to reduce the cost of fixing defects later.
+2. Testing Shows the Presence of Defects: Testing can reveal defects in the software but cannot prove that the software is completely defect-free.
+3. Exhaustive Testing is Impossible: Due to the vast number of possible input combinations (both expected and unexpected), it is not feasible to test every scenario.
+4. Defect Clustering: Defects tend to cluster in specific modules or complex areas of the code. When a defect is found in a particular section, additional testing should be focused there.
+5. Pesticide Paradox: Repeated use of the same test cases will eventually stop finding new defects. Test cases should be regularly reviewed and updated to remain effective.
+6. Testing is Context Dependent: Different applications and environments require different testing approaches and techniques.
+7. Absence of Errors Fallacy: Finding no errors does not necessarily mean the software is usable. If the software does not meet the user’s actual needs and expectations, it is still considered faulty.
+
+26th march 2026
+Tutorial #6 - Software Development Lifecycle
+
+Software Development Lifecycle (SDLC) is an organized list of steps or procedure used in the production of "Market ready" applications / software.
+
+SDLC includes the following steps:
+1. Requirement Analysis: Each functional and non-functional requirement is gotten from the user and researched.
+
+2. Design: After requirement analysis, the software is design, this stage is considered the early stage of the software as its only in this stage that a tangible product is conceived.
+
+3. Development: this stage includes coding and debugging the software application.
+
+4. Testing: On of the most important stages in SDLC, here the code is checked for bugs and errors that could be detrimental to the functioning of the application.
+
+5. Maintenance: the last stage of SDLC in includes constantly making updates and fixing bugs found in the code.
+
+Tutorial #7 - Software Testing lifecycle (STLC)
+
+Software Testing lifecycle is a subset of the Software Development Lifecycle (SDLC), it is the process of testing a software product to ensure it is ready for production.
+
+The steps involved in STLC are:
+1. Requirement Analysis: 
+	Similar to SDLC this step involves getting the functional and non-functional requirements from the users. These requirements are used to understand test cases.
+2. Test planning:
+	In this step each of the requirements are taken into consideration and a plan is made to test them.
+3. Test Case design and development:
+	Different methods and techniques are used to design various test cases for the application.
+4. Test Environment Setup
+5. Test Execution: 
+	The test cases are executed in the environment that was setup for the tests, and is used to verify the usability of the application.
+6. Test Reporting: 
+	The last step of STLC, in this step, the application behavior is recorded and reported for appropriate measures.
+7. Test closure.
+	
+  

@@ -1,4 +1,6 @@
 // This script was written to test the routing in Konga Ecommerce Website using basic cypress functions to know whether the test succeeds or fails
+// TO run all the code in this file remove the "only" from the it.only to make it just it that way the compiler would run the entire script
+
 
 describe('Konga Website Test', () => {
   // visits the Konga website before any test case is run
@@ -45,7 +47,7 @@ describe('Konga Website Test', () => {
       })    })
   })
 
-  it.only ("Login functions properly", () => {
+  it ("Login functions properly", () => {
     //find the login button
     cy.get("div[class*='DesktopNavigation_authLink__Zpjyj']")
         .find('a')
@@ -81,9 +83,32 @@ describe('Konga Website Test', () => {
       cy.get("input[id*='password']").type("Immanuel@mailinator.com1");
       cy.get("input[id*='confirmPassword']").type("Immanuel@mailinator.com1");
       cy.get("button[class*='button_button__cpnXl signup_signupButton__45b2O']").click({multiple:true});
-
-
   })
 
-  // it ("Order a Product on Konga", () => {})
+    // Test product order in Konga
+  it.only ("Order a Product on Konga", () => {
+      // click the login button
+      cy.get("div[class*='DesktopNavigation_authLink__Zpjyj']").click({multiple:true})
+
+
+      cy.get("input[id='username']").clear().type("mmmanuel@mailinator.com");
+      cy.get("input[id='password']").clear().type("Immanuel@mailinator.com1");
+
+      cy.get("button[type*='submit']").click()
+
+      // select the electronics categories
+      cy.get("div[class*='DesktopNavigation_navItemsBand__oW5jt']").find("a[class*='DesktopNavigation_navItem__TBbw6']").contains("Electronics").click({force:true, multiple:true})
+
+      // list of products
+
+
+      const productsUrl = []
+      const productName = []
+      cy.get("div[class*='ListingCard_listingCardProductImage__b_Ivy'] a").each(($a) => {
+        products.push($a.prop('href'))
+      })
+
+      cy.visit(productUrl[0])
+
+  })
 })
